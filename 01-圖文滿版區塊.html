@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖文滿版區塊</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(115deg, #7bf 50%, transparent 50%), center center/100% 100%,
+                url(https://picsum.photos/1200/600)right center/auto 100%;
+        }
+
+        .contain {
+            height: 100%;
+        }
+
+        .text {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .text h1 {
+            font-size: 80px;
+            border-bottom: gray 1px solid;
+        }
+
+        .text small {
+            font-size: 53px;
+            display: block;
+        }
+
+        .text h2 {
+            font-size: 50px;
+        }
+
+        .text p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="contain">
+            <div class="text">
+                <h1>歡迎光臨
+                    <small>2021/8/28</small>
+                </h1>
+                <h2>切版練習</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Itaque, dolor!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
