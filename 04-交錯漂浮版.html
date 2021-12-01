@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交錯漂浮版</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        body {
+            padding: 100px 0;
+            background: linear-gradient(20deg, #3d5493, #1aa2a0)fixed center center/100% 100%;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+
+        .item .pic {
+            width: 55%;
+            flex-shrink: 0;
+        }
+
+        .item .pic img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item .txt {
+            width: 55%;
+            flex-shrink: 0;
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+
+        .item> :first-child {
+            margin-right: -10%;
+        }
+
+        .item:nth-child(1) .txt {
+            background-color: rgba(240, 174, 193, 0.8);
+        }
+
+        .item:nth-child(2) .txt {
+            background-color: rgba(42, 253, 208, 0.8);
+        }
+
+        .item:nth-child(3) .txt {
+            background-color: rgba(254, 201, 121, 0.8);
+        }
+
+        .item:nth-child(4) .txt {
+            background-color: rgba(149, 219, 214, 0.8);
+        }
+
+        /* @media screen and(max-width:768px) {
+            .item {
+                display: block;
+            }
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/637/600/350" alt="">
+            </div>
+            <div class="txt">
+                <h1>test1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum odio deleniti consectetur
+                    voluptatum blanditiis sed dicta commodi nam vero.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <h1>test2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum odio deleniti consectetur
+                    voluptatum blanditiis sed dicta commodi nam vero.</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/id/997/600/350" alt="">
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/287/600/350" alt="">
+            </div>
+            <div class="txt">
+                <h1>test3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum odio deleniti consectetur
+                    voluptatum blanditiis sed dicta commodi nam vero.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="txt">
+                <h1>test4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsum odio deleniti consectetur
+                    voluptatum blanditiis sed dicta commodi nam vero.</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/id/37/600/350" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
