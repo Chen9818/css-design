@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>頁尾區塊</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'
+        integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=='
+        crossorigin='anonymous' />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .body {
+            background-color: black;
+        }
+
+        .main-footer {
+            padding: 150px 0 0 0;
+            background: linear-gradient(-20deg, #3f5494, #08c7a5);
+        }
+
+        .main-footer .container {
+            display: flex;
+            width: 1200px;
+            margin: auto;
+        }
+
+        .footer-item {
+            width: 0;
+            flex-grow: 1;
+            margin: 0 20px;
+
+        }
+
+        .footer-item h4 {
+            font-size: 24px;
+            color: white;
+            border-bottom: 1px dotted white;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        .footer-item nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-item nav a {
+            color: white;
+            line-height: 1.4;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+
+        .footer-item nav a:hover {
+            color: #fa0
+        }
+
+        .sub {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sub form {
+            display: flex;
+            width: 100%;
+            margin: auto 0;
+        }
+
+        .sub input[type='text'],
+        .sub input[type='submit'] {
+            border: none;
+            padding: 5px 10px;
+        }
+
+        .sub input[type='text'] {
+            width: 0;
+            flex-grow: 1;
+            /*滿版*/
+        }
+
+        .sub input[type='submit'] {
+            color: #70f6df;
+            background-color: #3e5293;
+        }
+
+        .copyright {
+            width: 100%;
+            text-align: center;
+            margin: 150px 0 0 0;
+            padding: 10px 0px;
+            background-color: #3e5293;
+            color: #70f6df;
+        }
+    </style>
+</head>
+<div class="main-footer">
+    <div class="container">
+        <div class="footer-item">
+            <h4>test1</h4>
+            <nav>
+                <a href="#"><i class="fas fa-chevron-right"></i>嗨嗨</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>測試123</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>我是陳暐中</a>
+            </nav>
+        </div>
+        <div class="footer-item">
+            <h4>test2</h4>
+            <nav>
+                <a href="#"><i class="fas fa-chevron-right"></i>台北市</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>新北市</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>宜蘭縣</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>桃園縣</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>高雄市</a>
+            </nav>
+        </div>
+        <div class="footer-item">
+            <h4>test3</h4>
+            <nav>
+                <a href="#"><i class="fas fa-chevron-right"></i>嗨你好</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>不好</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>快滾</a>
+                <a href="#"><i class="fas fa-chevron-right"></i>很開心見到你</a>
+            </nav>
+        </div>
+        <div class="footer-item sub">
+            <h4>test4</h4>
+            <form>
+                <input type="text" name="">
+                <input type="submit" value="訂閱我">
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        copyright &copy; 2021
+        陳暐中股份有限公司
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
