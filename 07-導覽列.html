@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>導覽列</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+
+        .main-header {
+            background-color: #ccc;
+        }
+
+        .main-header .container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: autos;
+        }
+
+        .main-header .logo {
+            width: 100px;
+        }
+
+        .main-header .logo img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .main-header .main-nav {
+            display: flex;
+            margin: auto;
+        }
+
+        .main-header .main-nav a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 1em;
+            position: relative;
+            transform: translateY(0px);
+            transition: 0.3s;
+            font-size: 40px;
+        }
+
+        .main-header .main-nav a:hover {
+            transform: translateY(-5px);
+        }
+
+        .main-header .main-nav a:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -5px;
+            height: 0;
+            border-bottom: 1px solid #000;
+            transition: 0.3s;
+        }
+
+        .main-header .main-nav a:hover:after {
+            right: 0;
+            left: 0;
+        }
+
+        .main-header .header-search {
+            display: flex;
+        }
+
+        .main-header .header-search button,
+        .main-header .header-search input {
+            border: none;
+            background-color: #fff;
+            padding: 5px 10px;
+        }
+
+        .main-header .header-search button:focus,
+        .main-header .header-search input:focus {
+            outline: none;
+        }
+
+        .main-header .header-search button {
+            border-radius: 0 200px 200px 0;
+        }
+
+        .main-header .header-search input {
+            border-radius: 200px 0 0 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="day7.png" alt="">
+            </a>
+            <nav class="main-nav">
+                <a href="#">test</a>
+                <a href="#">test</a>
+                <a href="#">test</a>
+                <a href="#">test</a>
+            </nav>
+            <from class="header-search">
+                <input type="search">
+                <button>ckick me</button>
+            </from>
+        </div>
+    </header>
+</body>
+
+</html>
