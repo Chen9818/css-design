@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>破格式設計</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(-45deg,#fffaf0,#f8c3c1);
+        }
+        .wrap{
+            display: flex;
+            width: 1200px;
+            margin: 100px auto;
+            /* background-color: #999; */
+            padding-top: 75px;
+        }
+        .item{
+            width: 320px;
+            margin: 0 15px;
+            text-align: center;
+            border: 10px solid #f9cec2;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 10px 20px 50px #f7b6a7;
+
+        }
+        .item h3{
+            color: #f5afac;
+        }
+        .item p{
+            color: #ccc;
+        }
+        .item .icon{
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            margin: -75px auto 0;
+            font-size: 65px;
+            line-height: 150px;
+            border-radius: 50%;
+            color: #f5afac ;
+            position: relative;
+        }
+        .item .icon::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-top: 10px solid #f9cec2;
+            border-right: 10px solid #f9cec2;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            left: -10px;
+            top: -10px;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+        .item .txt{
+            padding: 20px 20px 2em;
+        }
+        .item:hover .fab{
+            animation: media .2s linear infinite alternate;
+        }
+        @keyframes media{
+            0%{transform: rotate(-10deg);}
+            100%{transform: rotate(10deg);}
+        }
+        @media screen and (max-width: 768px){
+            .wrap{
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+            }
+            .item{
+                width: 80%;
+                margin-bottom: 100px;
+               
+            }
+            
+           
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="icon">
+                <i class="fab fa-alipay"></i>
+            </div>
+            <div class="txt">
+                <h3>test1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed a illum quidem error ad quibusdam obcaecati earum accusantium repudiandae!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fab fa-amazon"></i>
+            </div>
+            <div class="txt">
+                <h3>test2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed a illum quidem error ad quibusdam obcaecati earum accusantium repudiandae!</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <i class="fab fa-amazon-pay"></i>
+            </div>
+            <div class="txt">
+                <h3>test3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed a illum quidem error ad quibusdam obcaecati earum accusantium repudiandae!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
