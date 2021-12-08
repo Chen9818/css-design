@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(90deg,#3d5894,#08c7a5);
+        }
+        .table{
+            width: 800px;
+            margin: auto;
+            
+        }
+        .table table{
+            width: 100%;
+            border: 3px double #666;
+            background: #fff;
+            border-radius: 10px;
+        }
+        .table thead{
+            background: #333;
+            color: #fff;
+        }
+        .table thead th:first-child{
+            border-radius: 7px 0 0 0;/*左上的圓角*/
+        }
+        .table thead th:last-child{
+            border-radius: 0 7px 0 0;/*右上的圓角*/
+        }
+        .table tbody tr:nth-child(even){
+            background-color: #ffa;
+        }
+        .table tbody tr:hover{
+            background-color: #fee;
+        }
+        .table tfoot td:first-child{
+            border-radius: 0 0 0 7px;/*左下的圓角*/
+        }
+        .table tfoot td:last-child{
+            border-radius: 0 0 7px 0;/*右下的圓角*/
+        }
+        .table th{
+            border: 1px solid #666;
+            padding: 6px 10px;
+        }
+        .table td{
+            border: solid 1px #666;
+            padding: 6px 10px;
+        }
+        .table caption{
+            caption-side: bottom;
+            text-align: right;
+            padding: 10px 0;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <table>
+            <caption>
+                表格切版練習
+            </caption>
+            <thead>
+                <tr>
+                    <th>test1</th>
+                    <th>test2</th>
+                    <th>test3</th>
+                    <th>test4</th>
+                    <th>test5</th>
+                    <th>test6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>備註</td>
+                    <td colspan="5">以上為陳暐中股份有限公司之資產</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+</html>
