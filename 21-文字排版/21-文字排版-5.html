@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: auto;
+        }
+        .container h1{
+            width: 400px;
+            box-sizing: border-box;
+            font-size: 90px;
+            padding: 15px;
+            color: #aaa;
+            float: right;
+            position: relative;
+        }
+        .container h1::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 200px;
+            height: 200px;
+            border: 30px solid #eee;
+        }
+        .container .txt{
+            column-count: 2;
+            column-gap: 30px;
+        }
+        .container p{
+            line-height: 1.6;
+            margin-bottom: 1em;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>hello everyone</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At impedit odit delectus explicabo maxime nostrum amet corrupti in tenetur illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex repellat sit. Tempora illum reprehenderit iusto molestiae atque. At, vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ipsum quasi. Facere similique veritatis ipsa placeat voluptatum non aspernatur possimus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut neque quae minus facere obcaecati laboriosam harum? Sunt, cumque doloremque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

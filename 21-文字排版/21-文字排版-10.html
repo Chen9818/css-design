@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        .container h1{
+            width: 100%;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            font-size: 90px;     
+        }
+        .container .txt{
+            position: relative;
+            padding: 1em;    
+        }
+        .container .txt p{
+            margin-bottom: 1em;
+        }
+        .container .txt::before,
+        .container .txt::after{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+        }
+        .container .txt::before{
+            left: 0;
+            top: 0;
+            border-top: 3px solid #aaa;
+            border-left: 3px solid #aaa;
+        }
+        .container .txt::after{
+            right: 0;
+            bottom: 0;
+            border-right: 3px solid #aaa;
+            border-bottom: 3px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>hello everyone</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At impedit odit delectus explicabo maxime nostrum amet corrupti in tenetur illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex repellat sit. Tempora illum reprehenderit iusto molestiae atque. At, vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ipsum quasi. Facere similique veritatis ipsa placeat voluptatum non aspernatur possimus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut neque quae minus facere obcaecati laboriosam harum? Sunt, cumque doloremque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        .container h1{
+            width: 400px;
+            flex-shrink: 0;
+            box-sizing: border-box;
+            order: 1;
+            font-size: 90px;
+            padding-left: 15px;
+            color: #aaa;
+            position: relative;
+        }
+        .container h1::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border: 30px solid #f1b444;
+            transform: rotate(10deg);
+            z-index: -1;
+        }
+        .container h1::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border: 30px solid #f1b444;
+            transform: rotate(17deg);
+            z-index: -1;
+        }
+        .container .txt{
+            width: 800px;
+            flex-shrink: 0;
+            column-count: 2;
+            column-gap: 30px;
+            padding: 15px;
+            box-shadow: 0 0 30px #ccc;
+        }
+        .container .txt p{
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>hello everyone</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At impedit odit delectus explicabo maxime nostrum amet corrupti in tenetur illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex repellat sit. Tempora illum reprehenderit iusto molestiae atque. At, vero.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ipsum quasi. Facere similique veritatis ipsa placeat voluptatum non aspernatur possimus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut neque quae minus facere obcaecati laboriosam harum? Sunt, cumque doloremque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

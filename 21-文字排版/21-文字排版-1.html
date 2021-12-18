@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            padding: 100px 0;
+        }
+        .container h1{
+            width: 400px;
+            text-align: right;
+            box-sizing: border-box;
+            padding: 20px 15px 0;
+            background-color: #d5c7b9;
+        }
+        .container h1:after{
+            content: '';
+            display: block;
+            height: 4px;
+            width: 4em;
+            background-color: #000;
+            margin-left: auto;
+        }
+        .container .txt{
+            width: 800px;
+            box-sizing: border-box;
+            padding: 0 15px;
+            column-count: 2;
+            column-gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>hello everyone</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At impedit odit delectus explicabo maxime nostrum amet corrupti in tenetur illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex repellat sit. Tempora illum reprehenderit iusto molestiae atque. At, vero.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut neque quae minus facere obcaecati laboriosam harum? Sunt, cumque doloremque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
